@@ -18,4 +18,5 @@ app.post('/pontos', pontoController.addPonto);
 
 app.get('/', pontoController.sincronizar);
 
-app.get('/pontos', controller.listarPontos);
+app.get('/pontos', pontoController.listarPontos);
+
