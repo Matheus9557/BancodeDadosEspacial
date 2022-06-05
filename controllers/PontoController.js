@@ -28,11 +28,10 @@ const listarPontos = async (request, response) => {
     };
 };
 
-module.exports = {listarPontos};
 
 async function sincronizar(request, response) {
     await Ponto.sync();
     response.status(200).send('Sincronizado');
 }
 
-module.exports = {addPonto, sincronizar};
+module.exports = {addPonto, sincronizar, listarPontos};
