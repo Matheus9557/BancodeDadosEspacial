@@ -48,12 +48,3 @@ function salvar(){
     .catch(error => alert('Falha ao salvar!'));    
 
 }
-
-function listarPontos(){
-
-  fetch("http://localhost:3000/pontos",{
-    method: 'GET'
-  })
-  lista = document.getElementById('lista');
-  lista.appendChild(listarPontos);
-}
